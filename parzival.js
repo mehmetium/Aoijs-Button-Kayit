@@ -1,7 +1,7 @@
 const parzi = require("aoi.js")
 var fs = require('fs')
 const bot = new parzi.Bot({
-    token: process.env.token,
+    token: process.config.token,
     prefix:"$getServerVar[prefix]"
 })
 bot.onJoined()
